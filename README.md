@@ -127,6 +127,11 @@ While implementing the project, we saw different test cases such as detecting co
 ![Guns undetected](bagimage.png)
 ![Guns undetected](baggageimage.jpg)
 
+## Accuracy obtained while detection and explanation
+
+![Accuracy Obtained](baggageimage.jpg)
+
+
 ## **References**
 
 Object Detection using SSD, Resnet50 and Pytorch https://debuggercafe.com/object-detection-using-ssd300-resnet50-and-pytorch/
