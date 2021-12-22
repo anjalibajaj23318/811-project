@@ -88,7 +88,7 @@ image = cv2.imread(image_path)
 
 ## Feed our input data to the SSD object detector model
 
-The COCO labels are downloaded into the current directory. There will be a text file named category names.txt that contains 80 COCO classes when you download it.
+The labels are downloaded into the current directory. There will be a text file named category names.txt that contains 80 COCO classes when you download it.
 
 ```
 classes_to_labels = utils.get_coco_object_dictionary()
