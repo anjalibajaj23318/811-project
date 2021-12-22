@@ -34,7 +34,9 @@ execute the code
 
 ```
 
-## Draw_boxes function
+## Explanation of the code
+
+**Draw_boxes function**
 
 The bounding boxes around the items in an image are drawn. Three parameters are sent to draw bboxes(). Image, results, and classes to labels are the three. Before any resizing or other augmentations/transforms, image is the original input picture or frame. The bounding box coordinates, labels, and confidence scores for the discovered items are included in the findings. The classes to labels variable holds the names of the class labels from the dataset that we trained using X-RAY pictures.
 
@@ -69,7 +71,7 @@ def draw_bboxes(image, results, classes_to_labels):
     return image
 ```
 
-## Loading SSD Model
+**Loading SSD Model**
 
 ```
 ssd_model = torch.hub.load('NVIDIA/DeepLearningExamples:torchhub', 'nvidia_ssd', map_location=torch.device('cpu'))
@@ -78,7 +80,7 @@ ssd_model.eval()
 utils = torch.hub.load('NVIDIA/DeepLearningExamples:torchhub', 'nvidia_ssd_processing_utils')
 ```
 
-## Read the image and prepare the input data
+**Read the image and prepare the input data**
 
 ```
 read the image
@@ -86,7 +88,7 @@ image_path = "/content/x-ray-image-showing-briefcase-containing-knife-CTF3RC.jpg
 image = cv2.imread(image_path)
 ```
 
-## Feed our input data to the SSD object detector model
+**Feed our input data to the SSD object detector model**
 
 The labels are downloaded into the current directory. There will be a text file named category names.txt that contains 80 COCO classes when you download it.
 
@@ -94,7 +96,7 @@ The labels are downloaded into the current directory. There will be a text file 
 classes_to_labels = utils.get_coco_object_dictionary()
 ```
 
-**Build With**
+## Build With
 
 - [Pytorch](https://github.com/pytorch/pytorch)
 
@@ -158,9 +160,8 @@ https://alert.northeastern.edu/assets/adsa/adsa17_presentations/07_Breckon.pdf
 
 ## **Organization We worked with**
 
-```
-AltaML
-```
+**AltaML**
+
 Contact Details
 ```
 ● Harsh Sharma: harsh@altaml.com
