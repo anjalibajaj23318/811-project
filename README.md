@@ -14,7 +14,7 @@ We will carry out object detection in images using SSD object detector with  a R
 ## Project Directory Structure
 
 ```
-│ 811_project.ipynb
+│ .ipynb
 ├───input
 │ image_1.jpg
 │ image_2.jpg
