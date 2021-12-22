@@ -38,9 +38,11 @@ execute the code
 
 ## Explanation of the code
 
+*We have used a pre-trained SSD model, which was already trained on COCO dataset and hence with the help of Resnet50 by implementing transfer learning approach we used 200 images of GDXray dataset on top of our pre-trained model.*
+
 **Draw_boxes function**
 
-The bounding boxes around the items in an image are drawn. Three parameters are sent to draw bboxes(). Image, results, and classes to labels are the three. Before any resizing or other augmentations/transforms, image is the original input picture or frame. The bounding box coordinates, labels, and confidence scores for the discovered items are included in the findings. The classes to labels variable holds the names of the class labels from the dataset that we trained using X-RAY pictures.
+The bounding boxes around the items in an image are drawn. Three parameters are sent to draw bboxes(). Image, results, and classes to labels are the three. Before any resizing or other augmentations/transforms, image is the original input picture or frame. The bounding box coordinates, labels, and confidence scores for the discovered items are included in the findings.
 
 ```
 def draw_bboxes(image, results, classes_to_labels):
@@ -98,7 +100,7 @@ tensor = tensor.unsqueeze(0).to(device)
 
 **Feed our input data to the SSD object detector model**
 
-Within the torch.no_grad(), we feed the tensor input to the SSD detector. The labels are downloaded into the current directory. There will be a text file named category names.txt that contains classes when you download it. So in the output, you will notice that there are labels being marked for each harmful objects passed through the code we have shared.
+Within the torch.no_grad(), we feed the tensor input to the SSD detector. The trained dataset labels are downloaded into the current directory. There will be a text file named category names.txt that contains classes when you download it. So in the output, you will notice that there are labels being marked for each harmful objects passed through the code we have shared.
 
 ```
 classes_to_labels = utils.get_coco_object_dictionary()
