@@ -107,7 +107,7 @@ While implementing the project, we saw different test cases such as detecting co
 ![Knife detection](knife.jpg)
 
 **Scissors detection**
-![Scissors detection](Scissors.jpg)
+![Scissors detection](scissors.jpg)
 
 **Blade detection**
 ![Blades detection](blades1.jpg)
