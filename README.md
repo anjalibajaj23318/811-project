@@ -169,7 +169,7 @@ Contact Details
 ```
 
 ## Contact details for the authors of the repository and project
-``
-*Anjali Bajaj : abajaj2@ualberta.ca*
-*Harshit Pandey: hpandey1@ualberta.ca*
+```
+Anjali Bajaj : abajaj2@ualberta.ca
+Harshit Pandey: hpandey1@ualberta.ca
 ```
