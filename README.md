@@ -7,6 +7,9 @@ to look for hazardous objects. But, in a manual scan, it is easy to miss some de
 Create a model to detect harmful/hazardous objects like razor blades/handguns in
 X-Ray images of baggage
 
+The input size of the image is 300X300
+
+We will carry out object detection in images using SSD object detector with  a ResNet50 neural network backbone.
 
 ## Project Directory Structure
 
