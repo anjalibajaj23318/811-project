@@ -1,5 +1,13 @@
 ## Object Detection - Identify harmful objects in X-ray image of Baggages 
 
+## Introduction of the MM811 Project
+
+In areas of high security, like airports, etc, X-Ray machines are used to scan baggage
+to look for hazardous objects. But, in a manual scan, it is easy to miss some details.
+Create a model to detect harmful/hazardous objects like razor blades/handguns in
+X-Ray images of baggage
+
+
 ## Project Directory Structure
 
 ```
@@ -143,4 +151,15 @@ Object Detection using SSD, Resnet50 and Pytorch https://debuggercafe.com/object
 
 PyTorch SSD model implementation. https://pytorch.org/hub/nvidia_deeplearningexamples_ssd/
 
+https://alert.northeastern.edu/assets/adsa/adsa17_presentations/07_Breckon.pdf
 
+## **Organization We worked with**
+
+```
+AltaML
+```
+Contact Details
+```
+● Harsh Sharma: harsh@altaml.com
+● Sara Soltaninejad: sara@altaml.com
+```
