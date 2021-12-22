@@ -34,6 +34,8 @@ execute the code
 
 ```
 
+*Note: Due to google colab issue with cv2.imshow we are using a special library for cv2.imshow().*
+
 ## Explanation of the code
 
 **Draw_boxes function**
@@ -71,7 +73,9 @@ def draw_bboxes(image, results, classes_to_labels):
     return image
 ```
 
-**Loading SSD Model**
+**Loading SSD Resnet Model**
+
+This step prepares the SSD300 ResNet50 object detector. It loads the SSD300 model from PyTorch hub and also download the ResNet50 model.
 
 ```
 ssd_model = torch.hub.load('NVIDIA/DeepLearningExamples:torchhub', 'nvidia_ssd', map_location=torch.device('cpu'))
@@ -82,15 +86,19 @@ utils = torch.hub.load('NVIDIA/DeepLearningExamples:torchhub', 'nvidia_ssd_proce
 
 **Read the image and prepare the input data**
 
+We read the image from the input path using OpenCV and convert the image to RGB color format from the BGR color format. In this cell, the input is transformed to torch tensor of float32 type. We add an extra batch dimension to the input which makes the final input of shape
 ```
 read the image
 image_path = "/content/x-ray-image-showing-briefcase-containing-knife-CTF3RC.jpg"
 image = cv2.imread(image_path)
+transformed_image = transform(image)
+tensor = torch.tensor(transformed_image, dtype=torch.float32)
+tensor = tensor.unsqueeze(0).to(device)
 ```
 
 **Feed our input data to the SSD object detector model**
 
-The labels are downloaded into the current directory. There will be a text file named category names.txt that contains 80 COCO classes when you download it.
+Within the torch.no_grad(), we feed the tensor input to the SSD detector. The labels are downloaded into the current directory. There will be a text file named category names.txt that contains classes when you download it. So in the output, you will notice that there are labels being marked for each harmful objects passed through the code we have shared.
 
 ```
 classes_to_labels = utils.get_coco_object_dictionary()
