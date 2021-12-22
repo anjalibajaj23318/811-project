@@ -129,7 +129,7 @@ While implementing the project, we saw different test cases such as detecting co
 
 ## Accuracy obtained while detection and explanation
 
-![Accuracy Obtained](baggageimage.jpg)
+![Accuracy Obtained](ss89.png)
 
 
 ## **References**
