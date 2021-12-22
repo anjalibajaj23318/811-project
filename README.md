@@ -34,7 +34,7 @@ execute the code
 
 ```
 
-## Draw_boxes in the 2nd cell of the code
+## Draw_boxes function
 
 The bounding boxes around the items in an image are drawn. Three parameters are sent to draw bboxes(). Image, results, and classes to labels are the three. Before any resizing or other augmentations/transforms, image is the original input picture or frame. The bounding box coordinates, labels, and confidence scores for the discovered items are included in the findings. The classes to labels variable holds the names of the class labels from the dataset that we trained using X-RAY pictures.
 
