@@ -131,6 +131,11 @@ While implementing the project, we saw different test cases such as detecting co
 
 ![Accuracy Obtained](ss89.png)
 
+We have found that the result showed that it can detected only knives, blades and scissors but it cannot detect guns and it cannot detect multiple objects in the image which is making it less effective than other models present.
+
+## **Dataset used has been mentioned in the readme files for every question.**
+
+- GDXray (https://domingomery.ing.puc.cl/material/gdxray/)
 
 ## **References**
 
@@ -138,6 +143,4 @@ Object Detection using SSD, Resnet50 and Pytorch https://debuggercafe.com/object
 
 PyTorch SSD model implementation. https://pytorch.org/hub/nvidia_deeplearningexamples_ssd/
 
-## **Dataset used has been mentioned in the readme files for every question.**
 
-- GDXray (https://domingomery.ing.puc.cl/material/gdxray/)
