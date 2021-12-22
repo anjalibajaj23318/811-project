@@ -167,3 +167,8 @@ Contact Details
 ● Harsh Sharma: harsh@altaml.com
 ● Sara Soltaninejad: sara@altaml.com
 ```
+
+## Contact details for the authors of the repository and project
+
+*Anjali Bajaj : abajaj2@ualberta.ca*
+*Harshit Pandey: hpandey1@ualberta.ca*
