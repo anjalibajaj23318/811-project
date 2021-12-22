@@ -168,7 +168,7 @@ Contact Details
 ● Sara Soltaninejad: sara@altaml.com
 ```
 
-## Contact details of the Team IAM members 
+## Contact details of the author of repository
 ```
 Anjali Bajaj : abajaj2@ualberta.ca
 Harshit Pandey: hpandey1@ualberta.ca
